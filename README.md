@@ -1,27 +1,33 @@
-# AngularPrueba
+# Prueba front PULPO 🐙
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
+Proyecto realizado para una prueba técnica. Consiste en que un usuario pueda agregar tantos servicios como requiera al mismo tiempo y estos se muestren en otra vista.
 
-## Development server
+### Funcionalidad
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Registrar nuevos servicios
+- Listar servicios `Título` `Precio` `Unidad`
 
-## Code scaffolding
+### Librerías
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Algunas librearías que se han utilizado en este proyecto son las siguientes:
 
-## Build
+- [hot-toast]
+- [rxjs]
+- [material]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Formulario
 
-## Running unit tests
+- Input title: `requerido` `maxLength(20)`
+- Input price: `requerido`
+- select: `requerido`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Iniciar el proyecto
 
-## Running end-to-end tests
+- npm
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+  ```sh
+  npm install
+  ng serve
+  ```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  Navegar `http://localhost:4200/`
