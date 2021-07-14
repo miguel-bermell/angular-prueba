@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li *ngIf="checkRouteList()">
+      Mis Servicios <mat-icon [routerLink]="['servicios']">add</mat-icon>
+    </li>
+    <li class="back" *ngIf="checkRouteServices()">
+      <mat-icon [routerLink]="['/']">arrow_back</mat-icon> Crear Servicios
+    </li>
+  </ul>
+</nav>

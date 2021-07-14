@@ -1,0 +1,44 @@
+<form class="services-form" [formGroup]="form" (ngSubmit)="saveClick(form)">
+
+
+  <ng-container formArrayName="services" *ngFor="let servicesForm of services.controls; let i = index">
+
+    <div class="services-form__row" [formGroupName]="i">
+      <div class="form-group">
+        <mat-label>Título</mat-label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Título del producto" formControlName="title">
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-label>Precio</mat-label>
+        <mat-form-field appearance="outline" class="price">
+          <input matInput type="number" placeholder="12.33" formControlName="price" ng-model="myDecimal | number : 2"
+            ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01">
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-label>Unidad</mat-label>
+        <mat-form-field class="unit" appearance="outline">
+          <mat-select placeholder="Unidad" formControlName="unitId">
+            <mat-option *ngFor="let item of units" [value]="item.id">{{item.description}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <mat-icon class="delete" (click)="deleteService(i)">delete_forever</mat-icon>
+    </div>
+  </ng-container>
+  <div class="add-services">
+    <mat-label>Button</mat-label>
+    <button type="button" class="add-service__btn" mat-stroked-button (click)="addService()">
+      <mat-icon>add</mat-icon> Añadir otro servicio
+    </button>
+  </div>
+  <div class="save">
+    <button class="save__button" mat-stroked-button color="primary" type="button" (click)="saveClick(form)">
+      Guardar servicios
+    </button>
+  </div>
+
+</form>

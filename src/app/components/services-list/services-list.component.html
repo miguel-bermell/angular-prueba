@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let service of services">
+    <div class="list-item">
+      <h3>{{service.title}}</h3>
+      <div class="list-item__description"><span>{{service.price}} €</span> <span>Por {{service.unitDesc}}</span></div>
+    </div>
+  </li>
+</ul>
+
+<button class="add-button" mat-mini-fab color="primary">
+  <mat-icon [routerLink]="['/servicios']">add</mat-icon>
+</button>

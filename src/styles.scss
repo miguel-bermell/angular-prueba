@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: calc(100vh - 4rem);
+  margin: 0;
+  padding: 0;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 7px 0 7px 0;
+  width: 100%;
+}
+
+.mat-form-field-wrapper {
+  padding: 0;
+}
+
+.mat-stroked-button .mat-button-wrapper > * {
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  height: calc(100vh - 6rem);
+  padding: 1rem;
+}
+
+// Media querys
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}

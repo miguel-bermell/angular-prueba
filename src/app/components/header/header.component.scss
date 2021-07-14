@@ -1,0 +1,31 @@
+:host {
+  height: 4rem;
+}
+
+nav {
+  border-bottom: 3px solid #cdcdcd;
+}
+
+ul {
+  list-style: none;
+  padding: 0 1rem;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .back {
+    justify-content: flex-start;
+    .mat-icon {
+      margin-right: 30px;
+    }
+  }
+
+  .mat-icon.notranslate.material-icons.mat-icon-no-color {
+    font-size: 30px;
+    cursor: pointer;
+    color: #757575;
+  }
+}

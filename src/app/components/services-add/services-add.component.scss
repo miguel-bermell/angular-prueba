@@ -1,0 +1,67 @@
+.price,
+.unit {
+  width: 100%;
+}
+.delete {
+  color: red;
+  cursor: pointer;
+  margin-top: 20px;
+  justify-self: center;
+}
+
+.services-form__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.25fr;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.add-services {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+mat-label {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+.add-service__btn {
+  width: 100%;
+  text-transform: uppercase;
+  height: 35px;
+  color: #707070;
+}
+
+.add-services {
+  width: 100%;
+  mat-label {
+    color: #b8b8b8;
+    font-weight: 400;
+  }
+}
+
+.save__button {
+  background-color: #3880ff;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 2rem;
+  width: 100%;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.save {
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 300px;
+}
+
+.mat-error {
+  margin-top: 1rem;
+}
