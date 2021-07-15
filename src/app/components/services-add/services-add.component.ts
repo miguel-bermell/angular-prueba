@@ -35,8 +35,6 @@ export class ServicesAddComponent implements OnInit {
     this.unitModel.getTypeOfunits().subscribe((data) => {
       this.units = data;
     });
-
-    console.log(this.services.controls[0]);
   }
 
   get services() {
