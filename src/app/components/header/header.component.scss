@@ -1,9 +1,11 @@
+@import "../../../variables";
+
 :host {
   height: 4rem;
 }
 
 nav {
-  border-bottom: 3px solid #cdcdcd;
+  border-bottom: 3px solid $colorNav;
 }
 
 ul {
@@ -26,6 +28,6 @@ ul {
   .mat-icon.notranslate.material-icons.mat-icon-no-color {
     font-size: 30px;
     cursor: pointer;
-    color: #757575;
+    color: $iconNav;
   }
 }

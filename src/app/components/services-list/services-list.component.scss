@@ -1,3 +1,4 @@
+@import "../../../variables";
 ul {
   padding: 0;
   list-style: none;
@@ -9,7 +10,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 0;
-    border-bottom: 0.5px solid #e4e4e4;
+    border-bottom: 0.5px solid $listItem;
   }
 
   .list-item__description {
@@ -17,7 +18,7 @@ ul {
     flex-direction: column;
     text-align: end;
     font-size: 0.8rem;
-    color: #8a8a8a;
+    color: $listDesc;
   }
 }
 

@@ -1,9 +1,11 @@
+@import "../../../variables";
+
 .price,
 .unit {
   width: 100%;
 }
 .delete {
-  color: red;
+  color: $iconDelete;
   cursor: pointer;
   margin-top: 20px;
   justify-self: center;
@@ -31,21 +33,21 @@ mat-label {
   width: 100%;
   text-transform: uppercase;
   height: 35px;
-  color: #707070;
+  color: $addServicesBtn;
 }
 
 .add-services {
   width: 100%;
   mat-label {
-    color: #b8b8b8;
+    color: $matLabel;
     font-weight: 400;
   }
 }
 
 .save__button {
-  background-color: #3880ff;
+  background-color: $bgSaveBtn;
   border-radius: 30px;
-  color: #fff;
+  color: $secondary;
   text-transform: uppercase;
   padding: 5px 2rem;
   width: 100%;
