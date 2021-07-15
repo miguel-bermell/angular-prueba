@@ -8,6 +8,7 @@
         <mat-label>Título</mat-label>
         <mat-form-field appearance="outline">
           <input matInput placeholder="Título del producto" formControlName="title">
+          <mat-error *ngIf="this.services.controls[i].value.title">El Título es demasiado largo</mat-error>
         </mat-form-field>
       </div>
       <div class="form-group">
@@ -15,6 +16,7 @@
         <mat-form-field appearance="outline" class="price">
           <input matInput type="number" placeholder="12.33" formControlName="price" ng-model="myDecimal | number : 2"
             ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01">
+
         </mat-form-field>
       </div>
       <div class="form-group">

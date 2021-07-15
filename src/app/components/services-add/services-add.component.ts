@@ -35,6 +35,8 @@ export class ServicesAddComponent implements OnInit {
     this.unitModel.getTypeOfunits().subscribe((data) => {
       this.units = data;
     });
+
+    console.log(this.services.controls[0]);
   }
 
   get services() {
@@ -64,7 +66,9 @@ export class ServicesAddComponent implements OnInit {
       });
       return;
     }
+    // if (this.form.valueChanges.subscribe(value => {
 
+    // })
     this.toastMessages.showError('Todos los campos son requeridos');
   }
 
