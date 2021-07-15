@@ -64,9 +64,6 @@ export class ServicesAddComponent implements OnInit {
       });
       return;
     }
-    // if (this.form.valueChanges.subscribe(value => {
-
-    // })
     this.toastMessages.showError('Todos los campos son requeridos');
   }
 
