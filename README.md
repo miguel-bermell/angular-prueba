@@ -9,7 +9,7 @@ Proyecto realizado para una prueba técnica. Consiste en que un usuario pueda ag
 
 ### Librerías
 
-Algunas librearías que se han utilizado en este proyecto son las siguientes:
+Algunas librerías que se han utilizado en este proyecto son las siguientes:
 
 - [hot-toast]
 - [rxjs]
